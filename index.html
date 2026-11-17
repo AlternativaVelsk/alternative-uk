@@ -2,92 +2,215 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#1264a3">
-<title>УК Альтернатива</title>
+<title>УК «Альтернатива»</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#f1f5f9;color:#18334a;font-family:Arial,sans-serif}
-header{background:linear-gradient(135deg,#1264a3,#168b75);color:white;padding:30px 16px;border-radius:0 0 25px 25px;text-align:center}
-.logo{font-size:48px}
-h1{font-size:25px;margin:8px}
-header p{font-size:14px;margin:6px}
-main{max-width:520px;margin:22px auto;padding:0 16px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-.card{background:white;border-radius:17px;padding:23px 8px;text-align:center;text-decoration:none;color:#18334a;box-shadow:0 3px 12px #0001;display:block}
-.card span{font-size:32px;display:block;margin-bottom:10px}
-.card b{font-size:14px}
-.call{display:block;background:#168b62;color:white;text-align:center;padding:18px;border-radius:15px;margin-top:18px;text-decoration:none;font-weight:bold}
-.info{background:white;padding:18px;border-radius:16px;margin-top:16px;line-height:1.7;font-size:14px}
-.info a{color:#1264a3;text-decoration:none}
-footer{text-align:center;color:#718096;font-size:12px;padding:25px}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #18334a;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #1264a3, #168b75);
+  color: white;
+  padding: 30px 16px;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 8px;
+}
+
+header p {
+  font-size: 14px;
+  margin: 6px;
+}
+
+main {
+  max-width: 520px;
+  margin: 22px auto;
+  padding: 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.card {
+  background: white;
+  border-radius: 17px;
+  padding: 23px 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #18334a;
+  box-shadow: 0 3px 12px #0001;
+  display: block;
+  transition: transform .15s;
+}
+
+.card:active {
+  transform: scale(.97);
+}
+
+.card span {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card b {
+  font-size: 14px;
+}
+
+.call {
+  display: block;
+  background: #168b62;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  border-radius: 15px;
+  margin-top: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  margin-top: 16px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.info a {
+  color: #1264a3;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #718096;
+  font-size: 12px;
+  padding: 25px;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="logo">🏠</div>
-<h1>УК «Альтернатива»</h1>
-<p>Ваш дом — наша забота!</p>
-<p>Вельск и Вельский округ</p>
+  <div class="logo">🏠</div>
+  <h1>УК «Альтернатива»</h1>
+  <p>Ваш дом — наша забота!</p>
+  <p>Вельск и Вельский округ</p>
 </header>
 
 <main>
-<div class="grid">
 
-<a class="card" href="mailto:ukalt@bk.ru?subject=Заявка%20в%20УК">
-<span>🛠️</span>
-<b>Оставить заявку</b>
-</a>
+  <div class="grid">
 
-<a class="card" href="tel:+79214898138">
-<span>🚨</span>
-<b>Аварийная служба</b>
-</a>
+    <!-- Заявка через ГИС ЖКХ -->
+    <a class="card"
+       href="https://dom.gosuslugi.ru/"
+       target="_blank"
+       rel="noopener">
+      <span>🛠️</span>
+      <b>Оставить заявку</b>
+    </a>
 
-<a class="card" href="https://max.ru/id2907017828_biz" target="_blank" rel="noopener">
-<span>📢</span>
-<b>Отключения и работы</b>
-</a>
+    <!-- Аварийная служба -->
+    <a class="card" href="tel:89214898138">
+      <span>🚨</span>
+      <b>Аварийная служба</b>
+    </a>
 
-<a class="card" href="tel:+78183665544">
-<span>☎️</span>
-<b>Телефон офиса УК</b>
-</a>
+    <!-- Канал MAX -->
+    <a class="card"
+       href="https://max.ru/id2907017828_biz"
+       target="_blank"
+       rel="noopener">
+      <span>📢</span>
+      <b>Отключения и работы</b>
+    </a>
 
-</div>
+    <!-- Телефон офиса -->
+    <a class="card" href="tel:88183665544">
+      <span>☎️</span>
+      <b>Телефон офиса УК</b>
+    </a>
 
-<a class="call" href="tel:+79214898138">
-🚨 Позвонить диспетчеру 24/7
-</a>
+  </div>
 
-<div class="info">
-<b>Контакты управляющей компании</b><br><br>
+  <!-- Быстрый вызов диспетчера -->
+  <a class="call" href="tel:89214898138">
+    🚨 Позвонить диспетчеру 24/7
+  </a>
 
-<b>ООО «АЛЬТЕРНАТИВА»</b><br><br>
+  <!-- Контакты -->
+  <div class="info">
 
-Телефон офиса:<br>
-<a href="tel:+78183665544">8 (81836) 6-55-44</a><br><br>
+    <b>Управляющая компания ООО «АЛЬТЕРНАТИВА»</b>
 
-Аварийная служба 24/7:<br>
-<a href="tel:+79214898138">8-921-489-81-38</a><br><br>
+    <br><br>
 
-Электронная почта:<br>
-<a href="mailto:ukalt@bk.ru">ukalt@bk.ru</a><br><br>
+    <b>Телефон офиса:</b><br>
+    <a href="tel:88183665544">
+      8 (81836) 6-55-44
+    </a>
 
-Адрес:<br>
-165150, Архангельская область,<br>
-Вельский район, дер. Вороновская,<br>
-д. 1Б, стр. 9
-<br><br>
+    <br><br>
 
-<a href="https://www.google.com/maps/search/?api=1&query=165150+деревня+Вороновская+1Б+строение+9">
-📍 Найти адрес на карте
-</a>
-</div>
+    <b>Аварийная служба (круглосуточно):</b><br>
+    <a href="tel:89214898138">
+      8-921-489-81-38
+    </a>
+
+    <br><br>
+
+    <b>Электронная почта:</b><br>
+    <a href="mailto:ukalt@bk.ru">
+      ukalt@bk.ru
+    </a>
+
+    <br><br>
+
+    <b>Адрес:</b><br>
+    165150, Архангельская область,<br>
+    Вельский район, деревня Вороновская,<br>
+    дом 1Б, строение 9
+
+    <br><br>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=165150+деревня+Вороновская+1Б+строение+9"
+       target="_blank"
+       rel="noopener">
+      📍 Найти адрес на карте
+    </a>
+
+  </div>
+
 </main>
 
 <footer>
-ООО «Альтернатива» · Вельск
+  ООО «Альтернатива» · Вельск
 </footer>
+
 </body>
 </html>
